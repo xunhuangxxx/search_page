@@ -63,9 +63,9 @@ function addPagination (list) {
         buttonLists[i].className = '';
       }
       e.target.className = 'active';
+      const page = e.target.textContent;
+      showPage(list, page);
     }
-    const page = e.target.textContent;
-    showPage(list, page);
   });
 }
 // Call functions
